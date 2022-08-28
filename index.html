@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>sampe-webpage</title>
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,6 +15,11 @@
     <nav>
 
     </nav>
+    <div class="nav-btn">
+      <span>_</span>
+      <span>_</span>
+      <span>_</span>
+    </div>
   </header>
 
   <main>
@@ -21,15 +28,99 @@
     </div>
 
     <section id="pickup">
-      <h2>PICK UP</h2>
+      <h2 class="title">PICK UP</h2>
+      <ul>
+        <li><img src="img/pickup1.jpeg" alt="1"></li>
+        <li><img src="img/pickup2.jpeg" alt="2"></li>
+        <li><img src="img/pickup3.jpeg" alt="3"></li>
+        <li><img src="img/pickup4.jpeg" alt="4"></li>
+        <li><img src="img/pickup5.jpeg" alt="5"></li>
+        <li><img src="img/pickup6.jpeg" alt="6"></li>
+      </ul>
     </section>
 
     <section id="feature">
-      <h2>FEATURE</h2>
+      <h2 class="title">FEATURE</h2>
+      <div class="grid">
+        <div class="item">
+          <img src="img/feature1.jpeg" alt="1">
+          <div class="item-contents">
+            <p class="category">category</p>
+            <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="date">XXXX.XX.XX</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/feature2.jpeg" alt="2">
+          <div class="item-contents">
+            <p class="category">category</p>
+            <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="date">XXXX.XX.XX</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/feature3.jpeg" alt="3">
+          <div class="item-contents">
+            <p class="category">category</p>
+            <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="date">XXXX.XX.XX</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/feature4.jpeg" alt="4">
+          <div class="item-contents">
+            <p class="category">category</p>
+            <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="date">XXXX.XX.XX</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/feature5.jpeg" alt="5">
+          <div class="item-contents">
+            <p class="category">category</p>
+            <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="date">XXXX.XX.XX</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/feature6.jpeg" alt="6">
+          <div class="item-contents">
+            <p class="category">category</p>
+            <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="date">XXXX.XX.XX</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="contact">
-      <h2>CONTACT</h2>
+      <h2 class="title">CONTACT</h2>
+      <div class="con-contents">
+        <div class="con-info">
+          <p>テキスト</p>
+          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+        <div class="con-form">
+          <form action="#">
+            <dl>
+              <dt><label for="name">Name:</label></dt>
+              <dd><input id="name" type="text"></dd>
+            </dl>
+            <dl>
+              <dt><label for="email">Mail:</label></dt>
+              <dd><input id="email" type="email"></dd>
+            </dl>
+            <dl>
+              <dt><label for="message">Message:</label></dt>
+              <dd><textarea id="message" cols="30" rows="5"></textarea></dd>
+            </dl>
+            <div class="btn">
+              <input type="submit" value="SEND">
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
 

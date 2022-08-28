@@ -1,3 +1,114 @@
-#video video {
-  width: 500px;
+html {
+  font-size: 100%;
 }
+
+body {
+  color: #121212;
+  font-size: 0.9rem;
+  /* line-height: 1.7; */
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.title {
+  font-size: 2.25rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/*  
+header
+*/
+
+header {
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.nav-btn span {
+}
+
+/*
+main
+*/
+
+/* video */
+#video video {
+  width: 100%;
+}
+
+/* pickup */
+#pickup {
+  width: 100%;
+  padding: 100px 0 50px 0;
+}
+
+
+/* feature */
+#feature {
+  max-width: 1240px;
+  padding: 100px 16px 50px 16px;
+  /* margin: -50px auto 10px auto; */
+}
+
+
+/* contact */
+#contact {
+  color: #fff;
+  background-color: #121212;
+  padding: 50px 0;
+}
+
+#contact .con-contents {
+  /* max-width: 1240px; */
+  padding: 0 16px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact .con-info p{
+  margin-bottom: 30px;
+}
+
+.con-info, .con-form {
+  width: 45%;
+}
+
+.con-form input, .con-form textarea {
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.con-form .btn input {
+  width: 200px;
+  color: #fff;
+  background-color: #121212;
+  border: solid 1px #fff;
+  padding: 12px 0;
+  margin-bottom: 0;
+}
+
+.con-form .btn input:hover {
+  color: #202020;
+  background-color: #fff;
+}
+
+
+/* 
+footer
+ */
