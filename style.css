@@ -37,8 +37,8 @@ header {
   padding: 20px 40px;
 }
 
-.nav-btn span {
-}
+/* .nav-btn span {
+} */
 
 /*
 main
@@ -112,3 +112,10 @@ main
 /* 
 footer
  */
+footer {
+  background-color: #121212;
+  color: #fff;
+  text-align: center;
+  font-size: 0.7rem;
+  padding: 10px 0;
+}
