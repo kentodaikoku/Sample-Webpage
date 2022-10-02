@@ -44,27 +44,72 @@ header {
 main
 */
 
-/* video */
+/*
+  video
+*/
 #video video {
   width: 100%;
 }
 
-/* pickup */
+/* 
+  pickup
+ */
 #pickup {
   width: 100%;
   padding: 100px 0 50px 0;
 }
 
-
-/* feature */
-#feature {
-  max-width: 1240px;
-  padding: 100px 16px 50px 16px;
-  /* margin: -50px auto 10px auto; */
+.slick-center li {
+  padding: 0 25px;
 }
 
 
-/* contact */
+/* 
+  feature
+ */
+#feature {
+  max-width: 1240px;
+  padding: 100px 16px 50px 16px;
+  margin: -50px auto 10px auto;
+}
+
+.grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.item {
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px 4px #ccc;
+}
+
+.grid img {
+  vertical-align: top;
+}
+
+.item-contents {
+  padding: 30px;
+}
+
+.item-contents .category {
+  font-size: 0.75rem;
+  margin-bottom: 20px;
+}
+
+.item-contents .text {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.item-contents .date {
+  font-size: 0.75rem;
+  text-align: right;
+}
+
+/*
+  contact
+*/
 #contact {
   color: #fff;
   background-color: #121212;
@@ -118,4 +163,43 @@ footer {
   text-align: center;
   font-size: 0.7rem;
   padding: 10px 0;
+}
+
+@media screen and (max-width: 767px) {
+  /* 
+    pickup
+   */
+  #pickup {
+    padding: 80px 0;
+  }
+
+  .slick-center li {
+    padding: 0 20px;
+  }
+
+  /* 
+    feature
+   */
+  #feature {
+    padding: 80px 16px;
+  }
+
+  .item-contents {
+    padding: 16px;
+  }
+  
+  /*
+    contact
+  */
+  #contact {
+    padding: 80px 0;
+  }
+
+  #contact .con-contents {
+    flex-direction: column;
+  }
+
+  .con-info, .con-form, .con-form .btn input {
+    width: 100%;
+  }
 }
