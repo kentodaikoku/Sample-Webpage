@@ -10,6 +10,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 img {
@@ -35,10 +36,76 @@ header {
   display:flex;
   justify-content: space-between;
   padding: 20px 40px;
+  position: fixed;
+  z-index: 10;
+  background-color: #fff;
 }
 
-/* .nav-btn span {
-} */
+#nav-btn {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  right: 30px;
+  z-index: 20;
+  display: block;
+  cursor: pointer;
+}
+
+#nav-btn span {
+  position: absolute;
+  /* display: block; */
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+}
+
+#nav-btn span:nth-child(1) {
+  top: 10px;
+}
+#nav-btn span:nth-child(2) {
+
+}
+#nav-btn span:nth-child(3) {
+  top: 20px;
+}
+
+/* クリック時のnav menu */
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  /* height: auto; */
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul {
+  margin: 50px 20px;
+}
+
+nav ul li {
+}
+
+nav .each-links {
+  /* font-size: 1.2rem; */
+}
+
+nav .each-links li {
+  padding: 20px 0;
+  border-bottom: solid 1px #fff;
+}
+
+nav .each-links li:first-child {
+  border-top: solid 1px #fff;
+}
+
+nav .sns-links li{
+  padding: 10px 0;
+}
 
 /*
 main
