@@ -27,9 +27,7 @@ li {
   text-align: center;
 }
 
-/*  
-header
-*/
+/* header ////////////////////////////////////////////////////// */
 
 header {
   width: 100%;
@@ -58,40 +56,34 @@ header {
   width: 30px;
   height: 2px;
   background-color: #333;
+  transition: all 0.5s;
 }
 
 #nav-btn span:nth-child(1) {
-  top: 10px;
+  top: 0;
 }
 #nav-btn span:nth-child(2) {
-
+  top: 10px;
 }
 #nav-btn span:nth-child(3) {
   top: 20px;
 }
 
 /* クリック時のnav menu */
-nav {
+#nav {
   position: fixed;
-  left: 0;
+  left: -300px;
   top: 0;
   bottom: 0;
   width: 300px;
-  /* height: auto; */
   background-color: #121212;
   display: flex;
   flex-direction: column;
+  transition: all 0.5s;
 }
 
 nav ul {
   margin: 50px 20px;
-}
-
-nav ul li {
-}
-
-nav .each-links {
-  /* font-size: 1.2rem; */
 }
 
 nav .each-links li {
@@ -107,9 +99,39 @@ nav .sns-links li{
   padding: 10px 0;
 }
 
-/*
-main
-*/
+#mask {
+  display: none;
+}
+
+.open #nav-btn span:nth-child(1) {
+  background-color: #fff;
+  transform: translateY(10px) rotate(-315deg);
+}
+.open #nav-btn span:nth-child(2) {
+  opacity: 0;
+}
+.open #nav-btn span:nth-child(3) {
+  background-color: #fff;
+  transform: translateY(-10px) rotate(315deg);
+} 
+
+.open #nav {
+  left: 0;
+  z-index: 10;
+}
+
+.open #mask {
+  display: block;
+  position: fixed;
+  background-color: #333;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.7;
+}
+
+/* main //////////////////////////////////////////////////////*/
 
 /*
   video
@@ -231,6 +253,8 @@ footer {
   font-size: 0.7rem;
   padding: 10px 0;
 }
+
+/* responsive ///////////////////////////////////////////////////// */
 
 @media screen and (max-width: 767px) {
   /* 
