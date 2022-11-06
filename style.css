@@ -31,7 +31,7 @@ li {
 
 header {
   width: 100%;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   padding: 20px 40px;
   position: fixed;
@@ -80,6 +80,8 @@ header {
   display: flex;
   flex-direction: column;
   transition: all 0.5s;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 nav ul {
@@ -105,6 +107,7 @@ nav .sns-links li{
 
 .open #nav-btn span:nth-child(1) {
   background-color: #fff;
+  -webkit-transform: translateY(10px) rotate(-315deg);
   transform: translateY(10px) rotate(-315deg);
 }
 .open #nav-btn span:nth-child(2) {
@@ -112,6 +115,7 @@ nav .sns-links li{
 }
 .open #nav-btn span:nth-child(3) {
   background-color: #fff;
+  -webkit-transform: translateY(-10px) rotate(315deg);
   transform: translateY(-10px) rotate(315deg);
 } 
 
@@ -132,6 +136,9 @@ nav .sns-links li{
 }
 
 /* main //////////////////////////////////////////////////////*/
+main {
+  padding-top: 90px;
+}
 
 /*
   video
