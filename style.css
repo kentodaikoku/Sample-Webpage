@@ -264,39 +264,51 @@ footer {
 /* responsive ///////////////////////////////////////////////////// */
 
 @media screen and (max-width: 767px) {
-  /* 
-    pickup
-   */
+/* header */
+header {
+  padding: 20px 16px 10px;
+}
+#nav-btn {
+  right: 10px;
+}
+nav ul {
+  margin: 30px 20px;
+}
+
+/* main */
+main {
+  padding-top: 0;
+}
+
+/* video */
+video {
+  height: 100vh;
+  object-fit: cover;
+}
+
+  /* pickup */
   #pickup {
     padding: 80px 0;
   }
-
   .slick-center li {
     padding: 0 20px;
   }
 
-  /* 
-    feature
-   */
+  /* feature */
   #feature {
     padding: 80px 16px;
   }
-
   .item-contents {
     padding: 16px;
   }
   
-  /*
-    contact
-  */
+  /* contact */
   #contact {
     padding: 80px 0;
   }
-
   #contact .con-contents {
     flex-direction: column;
   }
-
   .con-info, .con-form, .con-form .btn input {
     width: 100%;
   }

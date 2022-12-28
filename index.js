@@ -1,5 +1,6 @@
-// ハンバーガーメニュー
-
+/**
+ * ハンバーガーメニュー
+ */
 $(function() {
   $('#nav-btn').on('click', function() {
     // alert('aaaa');
@@ -16,8 +17,9 @@ $(function() {
 });
 
 
-// slick
-
+/**
+ * slick
+ */
 $('.slick-center').slick({
   arrows: false,
   centerMode: true,
