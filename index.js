@@ -11,14 +11,20 @@ $(function() {
     }
   });
 
+  // メニュー閉じる
   $('#mask').on('click', function() {
+    $('#header').removeClass('open');
+  });
+
+  // リンククリックでメニュー閉じる
+  $('#nav a').on('click', function () {
     $('#header').removeClass('open');
   });
 });
 
 
 /**
- * slick
+ * slick（スライダー）
  */
 $('.slick-center').slick({
   arrows: false,
@@ -48,6 +54,15 @@ $('.slick-center').slick({
 });
 
 // TODO: ページ移動アニメーション
+$('a[href^="#"]').click(function () {
+  let href = $(this).attr("href"); //リンクを取得
+  let target = $(href == "#" || href == "" ? 'html' : href); //ジャンプ先ID取得
+  let position = target.offset().top; //画面トップからジャンプ先要素までの距離を取得
+
+  // スムールスクロール実行
+  $("html, body").animate({scrollTop:position}, 600, "swing");
+  return false;
+})
 
 // TODO：　スクロール時画像フェード表示
 
