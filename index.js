@@ -3,7 +3,6 @@
  */
 $(function() {
   $('#nav-btn').on('click', function() {
-    // alert('aaaa');
     if ($('#header').hasClass('open')) {
       $('#header').removeClass('open');
     } else {
@@ -53,7 +52,9 @@ $('.slick-center').slick({
   ]
 });
 
-// TODO: ページ移動アニメーション
+/**
+ * スムーススクロール
+ */
 $('a[href^="#"]').click(function () {
   let href = $(this).attr("href"); //リンクを取得
   let target = $(href == "#" || href == "" ? 'html' : href); //ジャンプ先ID取得
@@ -62,7 +63,23 @@ $('a[href^="#"]').click(function () {
   // スムールスクロール実行
   $("html, body").animate({scrollTop:position}, 600, "swing");
   return false;
+});
+
+/**
+ * 画像フェード表示
+ */
+$(function() {
+  $(window).scroll(function() {
+    $('.fadein').each(function() {
+      let scroll = $(window).scrollTop(); //スクロールした距離
+      let target = $(this).offset().top; //fadeinクラスの要素までの距離
+      let windowHeight = $(window).height(); //画面の高さ
+  
+      //fadeinクラスの要素が画面下に来てから200px通過したタイミングで要素を表示
+      if (scroll > target - windowHeight + 200) {
+        $(this).css('opacity', '1');
+        $(this).css('transform', 'translateY(0)');
+      }
+    });
+  });
 })
-
-// TODO：　スクロール時画像フェード表示
-

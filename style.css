@@ -140,16 +140,12 @@ main {
   padding-top: 90px;
 }
 
-/*
-  video
-*/
+/* video */
 #video video {
   width: 100%;
 }
 
-/* 
-  pickup
- */
+/* pickup */
 #pickup {
   width: 100%;
   padding: 100px 0 50px 0;
@@ -160,9 +156,7 @@ main {
 }
 
 
-/* 
-  feature
- */
+/* feature */
 #feature {
   max-width: 1240px;
   padding: 100px 16px 50px 16px;
@@ -203,9 +197,7 @@ main {
   text-align: right;
 }
 
-/*
-  contact
-*/
+/* contact */
 #contact {
   color: #fff;
   background-color: #121212;
@@ -250,15 +242,20 @@ main {
 }
 
 
-/* 
-footer
- */
+/* footer */
 footer {
   background-color: #121212;
   color: #fff;
   text-align: center;
   font-size: 0.7rem;
   padding: 10px 0;
+}
+
+/* フェード表示 */
+.fadein {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s;
 }
 
 /* responsive ///////////////////////////////////////////////////// */
