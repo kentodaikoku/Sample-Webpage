@@ -273,13 +273,10 @@ nav ul {
 }
 
 /* main */
-main {
-  padding-top: 0;
-}
+
 
 /* video */
 video {
-  height: 100vh;
   object-fit: cover;
 }
 
