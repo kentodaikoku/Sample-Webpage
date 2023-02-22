@@ -1,3 +1,3 @@
 # Sample-Webpage
 
-![resize](https://user-images.githubusercontent.com/109893255/220549831-c1ff9e2a-466e-48f8-828a-8292f025183f.png)
+![127](https://user-images.githubusercontent.com/109893255/220550273-79f3eab3-3450-4af9-bb02-4946e94c656f.png)
